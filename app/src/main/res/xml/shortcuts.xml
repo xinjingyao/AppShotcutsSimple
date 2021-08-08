@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="money_in"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/short_money_in">
+        <!--        android:shortcutLongLabel="@string/compose_shortcut_long_label1"-->
+        <!--        android:shortcutDisabledMessage="@string/compose_disabled_message1">-->
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.appshotcutssimple"
+            android:targetClass="com.example.appshotcutssimple.MoneyInActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+        <capability-binding android:key="actions.intent.CREATE_MESSAGE" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="money_out"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/short_money_out">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.appshotcutssimple"
+            android:targetClass="com.example.appshotcutssimple.MoneyOutActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+        <capability-binding android:key="actions.intent.CREATE_MESSAGE" />
+    </shortcut>
+</shortcuts>

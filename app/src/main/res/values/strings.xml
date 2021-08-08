@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppShotcutsSimple</string>
+    <string name="short_scan">扫一扫</string>
+    <string name="short_money_in">收钱</string>
+    <string name="short_money_out">付钱</string>
+    <string name="short_add">添加</string>
+    <string name="short_remove">删除</string>
+
+    <string name="short_id_scan">short_scan</string>
+</resources>
